@@ -20,6 +20,8 @@ function updateAttempt(attempt, value) {
 }
 
 function handleSubmit(e) {
+  e.preventDefault()
+
   let kick = document.getElementById('kick').value
 
   if(!kick) {
